@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     
@@ -23,8 +24,11 @@ class ViewController: UIViewController {
         // テキストフィールドに入力された文字をResultViewControllerに渡す
         resultViewController.myName = textField.text!
     }
+    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        
+        // テキストフィールドの値を初期化
+        textField.text = ""
+
     }
 
 
